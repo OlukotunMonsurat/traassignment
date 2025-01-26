@@ -1,0 +1,173 @@
+ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+#file-preview {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-width: 100%;  
+    text-align: center;
+}
+
+#file-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+#file-preview pre {
+    white-space: pre-wrap;  
+    word-wrap: break-word;
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+@keyframes revolve {
+    0% {
+        left: 50%;
+        top: 50%;
+    }
+    100% {
+        left: 70%;
+        top: 70%;
+    }
+}
+
+.revolving {
+    animation: revolve 4s infinite alternate ease-in-out;
+}
+
+.cont {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+}
+
+.divide {
+    margin-left: 20em;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 40vw;
+    margin: 0;
+    border-radius: 50%;
+    box-shadow: 2px 3px 34px red;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    position: relative;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 60vw;
+        height: 60vw;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
