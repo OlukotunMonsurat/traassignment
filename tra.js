@@ -44,19 +44,19 @@ document.getElementById('assignment-form').addEventListener('submit', function(e
 
 
 
-// Get the theme selector and body element
+
 const themeSelector = document.getElementById('theme-selector');
 const body = document.body;
 
-// Add event listener to change themes
+
 themeSelector.addEventListener('change', (event) => {
-    // Remove any existing theme class
+    
     body.className = '';
 
-    // Apply the selected theme class
+
     body.classList.add(event.target.value);
 
-    // Update other elements like header, footer, and buttons
+    
     document.querySelectorAll('header, footer, button').forEach((element) => {
         element.className = event.target.value;
     });
