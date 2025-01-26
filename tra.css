@@ -7,6 +7,77 @@ body {
    
 }
 
+/* Light Mode */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header.light-mode,
+footer.light-mode {
+    background-color: #333;
+    color: white;
+}
+
+button.light-mode {
+    background-color: #333;
+    color: white;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color:black;
+}
+
+header.dark-mode,
+footer.dark-mode {
+    background-color: #555;
+    color: #ffffff;
+}
+
+button.dark-mode {
+    background-color: #555;
+    color: white;
+}
+
+/* Sepia Mode */
+body.sepia-mode {
+    background-color: #f4ecd8;
+    color: #5b4636;
+}
+
+header.sepia-mode,
+footer.sepia-mode {
+    background-color: #5b4636;
+    color: #f4ecd8;
+}
+
+button.sepia-mode {
+    background-color: #5b4636;
+    color: #f4ecd8;
+}
+
+/* Blue Mode */
+body.blue-mode {
+    background-color: #d0e7ff;
+    color: #003366;
+}
+
+header.blue-mode,
+footer.blue-mode {
+    background-color: #003366;
+    color: #d0e7ff;
+}
+
+button.blue-mode {
+    background-color: #003366;
+    color: #d0e7ff;
+}
+
+
+
+
 #file-preview {
     margin-top: 20px;
     padding: 15px;
@@ -50,7 +121,7 @@ body {
 .cont {
     display: flex;
     height: 100vh;
-    background-color: #f0f0f0;
+   
     justify-content: center;
     align-items: center;
 }
