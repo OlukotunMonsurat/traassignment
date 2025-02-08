@@ -61,3 +61,19 @@ themeSelector.addEventListener('change', (event) => {
         element.className = event.target.value;
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const showButton = document.querySelector("#show button");
+    const filePreview = document.querySelector("#file-preview");
+
+    showButton.addEventListener("click", function () {
+        if (filePreview.style.display === "none" || filePreview.style.display === "") {
+            filePreview.style.display = "block";
+            showButton.textContent = "Hide Assignments";
+        } else {
+            filePreview.style.display = "none";
+            showButton.textContent = "Click to Show All Assignments";
+        }
+    });
+});
+

@@ -69,6 +69,37 @@ button.blue-mode {
     color: #d0e7ff;
 }
 
+body.pink-mode {
+    background-color: pink;
+    color: #000000;
+}
+
+header.pink-mode,
+footer.pink-mode {
+    background-color: rgb(247, 93, 119);
+    color: white;
+}
+
+button.pink-mode {
+    background-color: rgb(247, 93, 119);
+    color: white;
+}
+
+body.purple-mode {
+    background-color:rgb(232, 35, 232);
+    color: #000000;
+}
+
+header.purple-mode,
+footer.purple-mode {
+    background-color: purple;
+    color: white;
+}
+
+button.purple-mode {
+    background-color: purple;
+    color: white;
+}
 body.grey-mode {
     background-color: grey;
     color: #000000;
@@ -85,7 +116,6 @@ button.grey-mode {
     color: white;
 }
 
-
 #file-preview {
     margin-top: 20px;
     padding: 15px;
@@ -93,7 +123,7 @@ button.grey-mode {
     border-radius: 5px;
     background-color: #f9f9f9;
     max-width: 100%;  
-    text-align: center;
+    display: none;
 }
 
 #file-preview img {
@@ -207,6 +237,7 @@ nav ul li a {
     background-color: rgba(240, 240, 240, 0.8);
     margin-left: 250px; 
     margin-bottom: 50px;
+    height: 115vh;
 }
 
 #file-preview pre {
